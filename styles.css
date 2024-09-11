@@ -1,0 +1,11 @@
+body {
+    background-color: #b3b3b3;
+    border-style: solid;
+    border-top-color: #4400ff;
+    border-top-left-radius: #00ffbb;
+    align-self: center;
+}
+
+h1 {
+    color: #e42b2b;
+}
