@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Santa Cruz das Flores</title>
+</head>
+
+<body>
+    <header>
+        <h1>A minha Cidade</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="https://postman-echo.com/get">
+            <fieldset>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" autofocus required>
+                <p></p>
+
+                <label for="apelido">Apelido:</label>
+                <input type="text" name="apelido" id="apelido" required>
+                <p></p>
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" required>
+                <p></p>
+
+                <label for="fundacao">Qual é a data de partida?</label>
+                <input type="date" id="partida" name="partida" required><br><br>
+
+                <label for="fundacao">Qual é a data de chegada?</label>
+                <input type="date" id="chegada" name="chegada" required><br><br>
+
+                <label for="habitantes">Quantos passageiros?</label>
+                <input type="number" id="habitantes" name="habitantes" min="0" max="60" required><br><br>
+
+                <label for="transporte">Escolha o meio de transporte favorito:</label>
+                <select id="transporte" name="transporte">
+                    <option value="carro">Carro</option>
+                    <option value="comboio">Comboio</option>
+                    <option value="aviao">Avião</option>
+                    <option value="outro">Outro</option>
+                </select><br><br>
+
+                <label for="servico">Escolha o seu serviço favorito:</label>
+                <select id="servico" name="servico">
+                    <option value="basico">Basico</option>
+                    <option value="premium">Premium</option>
+                </select><br><br>
+
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>DIW 2024</p>
+    </footer>
+</body>
+
+</html>
