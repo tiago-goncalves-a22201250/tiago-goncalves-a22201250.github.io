@@ -24,7 +24,7 @@
                 <p></p>
 
                 <label for="apelido">Apelido:</label>
-                <input type="text" name="apelido" id="apelido" required>
+                <input type="text" name="apelido" id="apelido">
                 <p></p>
 
                 <label for="email">Email:</label>
@@ -35,10 +35,10 @@
                 <input type="date" id="partida" name="partida" required><br><br>
 
                 <label for="fundacao">Qual é a data de chegada?</label>
-                <input type="date" id="chegada" name="chegada" required><br><br>
+                <input type="date" id="chegada" name="chegada"><br><br>
 
                 <label for="habitantes">Quantos passageiros?</label>
-                <input type="number" id="habitantes" name="habitantes" min="0" max="60" required><br><br>
+                <input type="number" id="habitantes" name="habitantes" min="0" max="60"><br><br>
 
                 <label for="transporte">Escolha o meio de transporte favorito:</label>
                 <select id="transporte" name="transporte">
@@ -54,6 +54,11 @@
                     <option value="premium">Premium</option>
                 </select><br><br>
 
+                <label for="pedidos">Pedidos Especiais:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="500"></textarea><br><br>
+
+                <label for="valor">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label>
+                <input type="number" id="valor" name="valor" min="0" max="100000"><br><br>
 
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
