@@ -1,57 +1,93 @@
 h1 {
-    text-align: center;
-    background-color: aqua;
-    color: black;            
-    padding: 30px;            
-    margin: 0;
-  }
-  
-  body {
-    background-color: #d3d3d3;
-    margin: 0; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-  }
+  text-align: center;
+  background-color: aqua;
+  color: black;            
+  padding: 20px;            
+  margin: 0;
+}
 
-  nav {
-    background-color: black;  
-    text-align: center;    
-    padding: 10px;          
-  }
-  
-  nav a {
-    color: white;       
-    text-decoration: none;   
-    padding: 5px 10px;        
-    margin: 0 5px;   
-    display: inline-block;
-  }
-  
-  nav a:hover {
-    background-color: gray;  
-    border-radius: 5px;   
-  }
-  
-  img {
-    display: block;
-    margin: 10px auto 0;
-    max-width: 100%;
-    height: auto;  
-  }
+body {
+  background-color: #d3d3d3;
+  margin: 0; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
 
-  .caixa{
-    background-color: white;
-    color: black;             
-    padding: 10px;          
-    border-radius: 5px;      
-    width: 100%;         
-    box-sizing: border-box; 
-    margin: 10px 0;   
-  }
-  
-  footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 100%;
-    padding: 2px;
-  }
+nav {
+  background-color: black;  
+  text-align: center;    
+  padding: 5px;          
+}
+
+nav a {
+  color: white;       
+  text-decoration: none;   
+  padding: 5px 10px;        
+  margin: 0 5px;   
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: gray;  
+  border-radius: 5px;   
+}
+
+.imagem {
+  display: flex;   
+  justify-content: center;  
+  margin: 10px auto 0;
+}
+
+.imagem img {
+  max-width: 100%;   
+  height: auto; 
+}
+
+.caixa {
+  background-color: white;
+  color: black;             
+  padding: 10px;          
+  border-radius: 5px;      
+  width: 100%;         
+  box-sizing: border-box; 
+  margin: 10px 0;   
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 2px;
+}
+
+/*Fiz batota, esta me a dar erro como é sugerido no lab, explicar em aula
+#fotografias h3 {
+  color: #4CAF50;
+  font-size: 24px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#video h3 {
+  color: #4CAF50;
+  font-size: 24px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#poema h3 {
+  color: #4CAF50;
+  font-size: 24px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}*/
+
+h3 {
+  color: #4CAF50;
+  font-size: 24px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
