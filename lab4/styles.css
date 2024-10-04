@@ -159,3 +159,16 @@ h3 {
   width: 560px; /* Define a largura do iframe */
   height: 315px; /* Define a altura do iframe */
 }
+
+label {
+  font-size: small;
+}
+
+input {
+  font-size: medium;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
