@@ -13,7 +13,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
 
-nav {
+header nav {
   background-color: black;  
   text-align: center;    
   padding: 5px;          
@@ -157,8 +157,18 @@ label, input {
   padding: 20px; 
   margin: 10px;
   display: flex;
+  flex-direction: column;
 }
 
 .link {
   align-items: bottom;
+}
+
+main nav {
+  background-color: black;
+  width: 60%;
+}
+
+ol li:nth-child(odd) {
+  color: blue;
 }
