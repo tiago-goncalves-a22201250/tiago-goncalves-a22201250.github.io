@@ -63,101 +63,95 @@ footer {
 
 /*Multimedia*/
 h3 {
-  color: #4CAF50; /* Cor do texto */
-  font-size: 24px; /* Tamanho da fonte */
-  border-bottom: 2px solid #4CAF50; /* Borda abaixo do título */
-  padding-bottom: 10px; /* Espaçamento interno abaixo do texto */
-  margin-bottom: 20px; /* Espaçamento externo abaixo do título */
-  text-align: left; /* Alinha o texto à esquerda */
+  color: #4CAF50;
+  font-size: 24px; 
+  border-bottom: 2px solid #4CAF50; 
+  padding-bottom: 10px; 
+  margin-bottom: 20px; 
+  text-align: left; 
 }
 
- /* Estilo geral da seção de fotografias */
+ 
  .fotografias {
   padding: 20px;
-  display: flex; /* Torna a seção um contêiner flex */
-  flex-direction: column; /* Alinha os itens em coluna */
+  display: flex;
+  flex-direction: column;
 }
 
-/* Configura o contêiner das fotos para usar Flexbox */
 .foto-container {
-  display: flex; /* Torna cada contêiner de foto um flexbox */
-  flex-direction: column; /* Alinha o conteúdo em coluna */
-  flex: 1 1 200px; /* Diminui o tamanho base da caixa (200px como exemplo) */
-  margin: 10px; /* Espaçamento entre as caixas */
-  border: 1px solid #ccc; /* Borda das caixas */
-  border-radius: 5px; /* Arredondamento dos cantos */
-  overflow: hidden; /* Garante que o conteúdo não exceda os limites da caixa */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para um efeito 3D */
-  transition: transform 0.3s; /* Animação suave para hover */
-  height: 300px; /* Altura fixa para a caixa (ajuste conforme necessário) */
+  display: flex; 
+  flex-direction: column; 
+  flex: 1 1 200px;
+  margin: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  height: 300px; 
   justify-content: center;
   align-items: center;
 }
 
-/* Configura o contêiner das fotos para usar Flexbox */
 .foto-container {
-  display: flex; /* Torna cada contêiner de foto um flexbox */
-  flex-direction: column; /* Alinha o conteúdo em coluna */
-  justify-content: space-between; /* Espaço entre a imagem e o texto */
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
-  flex: 1 1 200px; /* Diminui o tamanho base da caixa (200px como exemplo) */
-  margin: 20px; /* Espaçamento entre as caixas */
-  border: 1px solid #ccc; /* Borda das caixas */
-  border-radius: 5px; /* Arredondamento dos cantos */
-  overflow: hidden; /* Garante que o conteúdo não exceda os limites da caixa */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para um efeito 3D */
-  transition: transform 0.3s; /* Animação suave para hover */
-  height: 150px; /* Altura fixa para a caixa (ajuste conforme necessário) */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 200px; 
+  margin: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s; 
+  height: 150px; 
 }
 
-/* Estilo das imagens */
 .foto-container img {
-  width: auto; /* Faz a imagem ocupar a largura automaticamente */
-  height:75%; /* Aumenta a altura da imagem para 60% da altura da caixa */
-  max-height: 75%; /* Define a altura máxima da imagem como 60% da altura da caixa */
-  object-fit: contain; /* Faz com que a imagem se ajuste sem ser cortada */
+  width: auto;
+  height:75%; 
+  max-height: 75%; 
+  object-fit: contain; 
   justify-content: center;
   align-items: center;
 }
 
-/* Estilo do texto abaixo das imagens */
 .foto-container p {
-  text-align: center; /* Centraliza o texto */
-  padding: 10px; /* Espaçamento interno */
-  margin: 0; /* Remove a margem padrão */
-  color: black; /* Muda a cor do texto para preto */
-  margin-top: auto; /* Faz o texto ficar na parte inferior da caixa */
+  text-align: center;
+  padding: 10px;
+  margin: 0; 
+  color: black; 
+  margin-top: auto;
 }
 
-/* Efeito hover nas caixas */
 .foto-container:hover {
-  transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
+  transform: scale(1.05);
 }
 
-/* Configura o contêiner das fotos para usar Flexbox */
 .foto-gallery {
-  display: flex; /* Torna a galeria um flexbox */
-  flex-wrap: wrap; /* Permite que as imagens se movam para a próxima linha se não houver espaço */
-  justify-content: center; /* Centraliza as caixas no contêiner */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
 }
 
 .videol {
-  display: flex; /* Torna a seção um contêiner flex */
-  flex-direction: column; /* Alinha os itens em coluna */
-  padding: 20px; /* Espaçamento interno */
+  display: flex;
+  flex-direction: column;
+  padding: 20px; 
 }
 
 .video-container {
-  display: flex; /* Torna o contêiner de vídeo um flexbox */
-  justify-content: center; /* Centraliza o iframe horizontalmente */
-  align-items: center; /* Centraliza verticalmente, se necessário */
-  width: auto; /* Permite que o contêiner se ajuste ao tamanho do iframe */
-  margin: 20px 0; /* Margens verticais para separar o vídeo do conteúdo acima e abaixo */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 20px 0;
 }
 
 .videol iframe {
-  width: 560px; /* Define a largura do iframe */
-  height: 315px; /* Define a altura do iframe */
+  width: 560px;
+  height: 315px;
 }
 
 label {
