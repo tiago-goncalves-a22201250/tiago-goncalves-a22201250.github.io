@@ -61,17 +61,8 @@ footer {
   padding: 2px;
 }
 
-/*Multimedia
-h3 {
-  color: #4CAF50;
-  font-size: 24px; 
-  border-bottom: 2px solid #4CAF50; 
-  padding-bottom: 10px; 
-  margin-bottom: 20px; 
-  text-align: left; 
-}*/
-
- h3#fotografias, #video h3, #poema h3 {
+/*Multimedia*/
+ h3#fotografias, h3#video, h3#poema {
   color: #4CAF50;
   font-size: 24px;
   border-bottom: 2px solid #4CAF50;
@@ -98,21 +89,6 @@ h3 {
   height: 300px; 
   justify-content: center;
   align-items: center;
-}
-
-.foto-container {
-  display: flex; 
-  flex-direction: column; 
-  justify-content: space-between;
-  align-items: center;
-  flex: 1 1 200px; 
-  margin: 20px; 
-  border: 1px solid #ccc; 
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.3s; 
-  height: 150px; 
 }
 
 .foto-container img {
@@ -174,4 +150,15 @@ label, input {
   margin-bottom: 10px;
 }
 
-/*Pontos de interesse*/
+/*Pontos de Interesse*/
+.caixa {
+  background-color: white;
+  color: black;
+  padding: 20px; 
+  margin: 10px;
+  display: flex;
+}
+
+.link {
+  align-items: bottom;
+}
