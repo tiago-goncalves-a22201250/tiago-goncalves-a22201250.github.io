@@ -97,10 +97,34 @@ img {
 div p{
     position: absolute;
     bottom: 20px; right: 20px;
-    color: white;
 }
 
-article#cidades{
+article#cidades {
     display: flex;
-    background-color: rgb(97, 97, 97);
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5vw;
+    background: whitesmoke;
+  }
+  
+  #cidades section {
+    display: flex;
+    margin: 10px;
+  }
+  
+  #cidades img {
+    width: 100px;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  #cidades div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    background: white;
+  }
+  
