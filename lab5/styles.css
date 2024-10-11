@@ -1,4 +1,8 @@
 /*Geral*/
+* {
+  font-family: "Times New Roman", times, serif;
+}
+
 h1 {
   text-align: center;
   background-color: aqua;
@@ -75,6 +79,7 @@ footer {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  cursor: zoom-in;
 }
 
 .foto-container {
