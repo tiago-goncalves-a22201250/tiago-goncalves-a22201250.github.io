@@ -21,7 +21,8 @@ body {
 header nav {
   background-color: black;  
   text-align: center;    
-  padding: 5px;          
+  padding: 5px;  
+  text-decoration: none;        
 }
 
 nav a {
