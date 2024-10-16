@@ -189,4 +189,12 @@ div p {
     display: block;
   }
 
+  .parallax {
+    background-image: url("VistaGeralVila.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
   
