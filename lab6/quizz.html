@@ -26,20 +26,17 @@
             <fieldset>
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" autofocus required>
-                <p></p>
 
                 <label for="apelido">Apelido:</label>
                 <input type="text" name="apelido" id="apelido" required>
-                <p></p>
 
                 <label for="email">Email:</label>
                 <input type="text" name="email" id="email" required>
-                <p></p>
 
                 <legend>Quizz: O que sabe sobre a ilha das Flores?</legend>
                 <label for="cidade">Qual é o nome da cidade principal?</label>
                 <input type="text" id="cidade" name="cidade" placeholder="Preencha aqui" autocomplete="on" size="30"
-                    maxlength="100" autofocus required><br><br>
+                    maxlength="100" autofocus required>
 
                 <label>Que tipo de cidade é?</label><br>
                 <input type="radio" id="cidade" name="tipo_cidade" value="cidade" required>
@@ -47,7 +44,7 @@
                 <input type="radio" id="vila" name="tipo_cidade" value="vila">
                 <label for="vila">Vila</label><br>
                 <input type="radio" id="aldeia" name="tipo_cidade" value="aldeia">
-                <label for="aldeia">Aldeia</label><br><br>
+                <label for="aldeia">Aldeia</label>
 
                 <label>Quais são as atrações principais?</label><br>
                 <input type="checkbox" id="praias" name="atracoes" value="praias">
@@ -55,37 +52,37 @@
                 <input type="checkbox" id="museus" name="atracoes" value="museus">
                 <label for="museus">Museus</label><br>
                 <input type="checkbox" id="piscinas" name="atracoes" value="piscinas">
-                <label for="piscinas">Piscinas</label><br><br>
+                <label for="piscinas">Piscinas</label>
 
                 <label for="fundacao">Quando foi fundada a cidade?</label>
-                <input type="date" id="fundacao" name="fundacao" required><br><br>
+                <input type="date" id="fundacao" name="fundacao" required>
 
                 <label for="visita">Qual é a melhor hora para visitar a cidade?</label>
-                <input type="time" id="visita" name="visita" required><br><br>
+                <input type="time" id="visita" name="visita" required>
 
                 <label for="cor">Qual é a cor que representa a cidade?</label>
-                <input type="color" id="cor" name="cor" value="#000000"><br><br>
+                <input type="color" id="cor" name="cor" value="#000000">
 
                 <label for="habitantes">Quantos habitantes tem a cidade?</label>
                 <input type="number" id="habitantes" name="habitantes" min="0" max="10000000" step="1000"
-                    required><br><br>
+                    required>
 
                 <label for="satisfacao">Qual acha que é o nível de satisfação do local? (0-10)</label>
-                <input type="range" id="satisfacao" name="satisfacao" min="0" max="10" step="1"><br><br>
+                <input type="range" id="satisfacao" name="satisfacao" min="0" max="10" step="1">
 
                 <label for="imagem">Envie uma imagem da cidade:</label>
-                <input type="file" id="imagem" name="file"><br><br>
+                <input type="file" id="imagem" name="file">
 
                 <label for="comentarios">Opinião sobre o local:</label><br>
                 <textarea id="comentarios" name="comentarios" rows="4" cols="50"
-                    placeholder="Diga aqui a sua opinião..." maxlength="500"></textarea><br><br>
+                    placeholder="Diga aqui a sua opinião..." maxlength="500"></textarea>
 
                 <label for="clima">Escolha o clima predominante:</label>
                 <select id="clima" name="clima">
                     <option value="tropical">Tropical</option>
                     <option value="mediteraneo">Mediteranio</option>
                     <option value="polar">Polar</option>
-                </select><br><br>
+                </select>
 
                 <label for="monumento">Qual é o principal monumento da cidade?</label>
                 <input type="text" id="monumento" name="monumento" list="monumentos" autocomplete="on" required>
@@ -94,7 +91,7 @@
                     <option value="Piscinas Naturais">
                     <option value="Camara Municipal">
                     <option value="Faja Grande">
-                </datalist><br><br>
+                </datalist>
 
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
