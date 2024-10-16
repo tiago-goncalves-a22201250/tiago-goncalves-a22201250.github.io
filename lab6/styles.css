@@ -1,0 +1,190 @@
+/*Geral*/
+* {
+  font-family: "Times New Roman", times, serif;
+}
+
+h1 {
+  text-align: center;
+  background-color: aqua;
+  color: black;            
+  padding: 20px;            
+  margin: 0;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #d3d3d3;
+  margin: 0; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+header nav {
+  background-color: black;  
+  text-align: center;    
+  padding: 5px;  
+  text-decoration: none;        
+}
+
+nav a {
+  color: white;       
+  text-decoration: none;   
+  padding: 5px 10px;        
+  margin: 0 5px;   
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: gray;  
+  border-radius: 5px;   
+}
+
+.imagem {
+  display: flex;   
+  justify-content: center;  
+  margin: 10px auto 0;
+}
+
+.imagem img {
+  max-width: 100%;   
+  height: auto; 
+}
+
+.caixa {
+  background-color: white;
+  color: black;             
+  padding: 10px;          
+  border-radius: 5px;      
+  width: 100%;         
+  box-sizing: border-box; 
+  margin: 10px 0;   
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 2px;
+}
+
+/*Multimedia*/
+ h3#fotografias, h3#video, h3#poema {
+  color: #4CAF50;
+  font-size: 24px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+ .fotografias {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  cursor: zoom-in;
+}
+
+.foto-container {
+  display: flex; 
+  flex-direction: column; 
+  flex: 1 1 200px;
+  margin: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  height: 300px; 
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-container img {
+  width: auto;
+  height:75%; 
+  max-height: 75%; 
+  object-fit: contain; 
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-container p {
+  text-align: center;
+  padding: 10px;
+  margin: 0; 
+  color: black; 
+  margin-top: auto;
+}
+
+.foto-container:hover {
+  transform: scale(1.05);
+}
+
+.foto-gallery {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.videol {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; 
+}
+
+.video-container {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 20px 0;
+}
+
+.videol iframe {
+  width: 560px;
+  height: 315px;
+}
+
+label {
+  font-size: small;
+}
+
+input {
+  font-size: medium;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*Pontos de Interesse*/
+.caixa {
+  background-color: white;
+  color: black;
+  padding: 20px; 
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  align-items: bottom;
+}
+
+main nav {
+  background-color: black;
+  width: 60%;
+}
+
+ol li:nth-child(odd) {
+  color: blue;
+}
+
+tr:nth-child(odd) td:nth-child(1) {
+  background-color: blue;
+  color: white;
+}
+
+tr:nth-child(odd) td:nth-child(2) {
+  background-color: grey;
+}
