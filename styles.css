@@ -1,5 +1,3 @@
-
-
 body {
     background-color: black;
     margin: 0;
@@ -13,6 +11,11 @@ head {
     text-align: center;
     font-family: "Times New Roman", times, serif;
     box-sizing: border-box;
+}
+
+#Interaces {
+  display: flex;
+  align-items: center;
 }
 
 div {
@@ -31,8 +34,7 @@ h1 {
     display: flex;
     position: relative;
     align-items: right;
-    left:150px
-    top:100px
+    right:auto;
   }
 
 div#Laboratorios {
@@ -119,7 +121,7 @@ div#Laboratorios {
   }
 
   footer{
-    background-color: grey;
+    background-color: rgb(185, 185, 185);
     font-family: "Times New Roman", times, serif;
     text-align: center;
     margin:20px;
