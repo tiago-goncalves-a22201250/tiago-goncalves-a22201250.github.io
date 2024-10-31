@@ -46,5 +46,14 @@ texto.addEventListener("input",function() {
 });
 
 //4º exe
-const fundo = document.getElementById("txtFundo");
+const submeter = document.getElementById("submeter");
+const txtFundo = document.getElementById("txtFundo");
 
+submeter.addEventListener("click", function() {
+    const cor = txtFundo.value.trim();
+
+    document.body.style.backgroundColor = cor;
+
+});
+
+//5º exe
