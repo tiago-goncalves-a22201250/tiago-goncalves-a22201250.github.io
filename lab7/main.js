@@ -57,3 +57,13 @@ submeter.addEventListener("click", function() {
 });
 
 //5º exe
+let counter = 0;
+const contador = document.querySelector("#contador");
+const botao = document.querySelector("#conta");
+
+function count() {
+    counter++;
+    contador.innerHTML = counter;
+}
+
+botao.addEventListener('click', count);

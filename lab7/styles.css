@@ -3,3 +3,10 @@ textarea {
     overflow: hidden;
     height: 1.5em;
 }
+
+section {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
