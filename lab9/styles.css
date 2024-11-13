@@ -1,0 +1,49 @@
+header {
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/*body*/
+body {
+    display: block;
+    background-color: rgb(189, 189, 189);
+}
+
+#produtos {
+    
+}
+
+
+/*footer*/
+footer {
+    height: auto;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+}
