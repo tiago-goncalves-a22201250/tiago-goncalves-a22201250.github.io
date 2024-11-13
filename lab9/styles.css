@@ -1,7 +1,7 @@
 header {
     background-color: purple;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -24,15 +24,21 @@ nav a {
 }
 
 /*body*/
+
 body {
-    display: block;
     background-color: rgb(189, 189, 189);
 }
 
-#produtos {
-    
+.produtos article {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    background-color: rgb(189, 189, 189);
 }
 
+.cesto {
+    display: ;
+}
 
 /*footer*/
 footer {
