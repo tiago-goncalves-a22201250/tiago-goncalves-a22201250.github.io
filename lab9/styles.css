@@ -2,12 +2,14 @@ header {
     background-color: purple;
     color: white;
     font-size: 15px;
-    width: 100%;
+    width: 100%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 h1 {
@@ -26,27 +28,42 @@ nav a {
 /*body*/
 
 body {
-    background-color: rgb(189, 189, 189);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
 
-.produtos article {
+produtos {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+}
+
+produtos p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.produtosContainer {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
-    background-color: rgb(189, 189, 189);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    padding: 20px;
 }
 
-.cesto {
-    display: ;
-}
+
 
 /*footer*/
 footer {
     height: auto;
     width: 100%;
     color: black;
-    display: flex;
-    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 20px;
     align-items: center;
 }
 
