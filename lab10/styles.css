@@ -121,6 +121,14 @@ textarea {
     resize: nome;
 }
 
+form {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+}
+
 /*footer*/
 footer {
     height: auto;
