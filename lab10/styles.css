@@ -112,8 +112,9 @@ h2 {
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    background-color: grey;
-    margin: 50px;
+    background-color: rgb(206, 206, 206);
+    margin: 40px;
+    gap: 20px;
 }
 
 textarea {

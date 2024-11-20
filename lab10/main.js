@@ -80,7 +80,6 @@ function carregarCarrinho() {
 
       const priceElement = document.createElement('p');
       priceElement.textContent = `Custo total: ${produto.price.toFixed(2)} €`;
-      valor = valor - preco;
       priceElement.classList.add('preco');
 
       const removeButton = document.createElement('button');
