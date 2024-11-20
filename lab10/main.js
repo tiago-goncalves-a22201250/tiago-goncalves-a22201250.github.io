@@ -1,17 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
-  carregarProdutos(produtos);
+  carregarProdutos();
   carregarCarrinho();
+  carregarSelect();
 });
 
-function carregarProdutos(produtos) {
-  const productsContainer = document.getElementById('produtosContainer');
-  productsContainer.innerHTML = '';
+function carregarProdutos() {
+  let productsContainer = document.getElementById('produtosContainer');
 
-  produtos.forEach(produto => {
-      const article = criarProduto(produto);
-      productsContainer.appendChild(article);
-  });
+  fetch('https://deisishop.pythonanywhere.com/products/')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      data.forEach(produto => {
+        const article = criarProduto(produto);
+        productsContainer.appendChild(article);
+      });
+    })
+    .catch(error => console.error('Erro:', error));
 }
+
 
 function criarProduto(produto) {
   const article = document.createElement('article');
@@ -54,11 +61,13 @@ function adicionarAoCarrinho(produto) {
 }
 
 function carregarCarrinho() {
+  const valor = document.getElementById('resultado');
   const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
   const carrinhoContainer = document.getElementById('carrinhoContainer');
   carrinhoContainer.innerHTML = '';
 
   carrinho.forEach((produto, index) => {
+
       const article = document.createElement('article');
       article.classList.add('produto');
 
@@ -71,6 +80,7 @@ function carregarCarrinho() {
 
       const priceElement = document.createElement('p');
       priceElement.textContent = `Custo total: ${produto.price.toFixed(2)} €`;
+      valor = valor - preco;
       priceElement.classList.add('preco');
 
       const removeButton = document.createElement('button');
@@ -84,6 +94,7 @@ function carregarCarrinho() {
       article.appendChild(priceElement);
       article.appendChild(removeButton);
       carrinhoContainer.appendChild(article);
+      valor.appendChild(valor);
   });
 }
 
@@ -93,4 +104,8 @@ function removerDoCarrinho(index) {
   carrinho.splice(index, 1);
   localStorage.setItem('carrinho', JSON.stringify(carrinho));
   carregarCarrinho();
+}
+
+function carregarSelect() {
+  let filtro = document.getElementById('filtro-select');
 }

@@ -107,6 +107,18 @@ h2 {
     background-color: #0056b3;
 }
 
+.filtroContainer {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    margin: 50px;
+}
+
+textarea {
+    resize: nome;
+}
 
 /*footer*/
 footer {
