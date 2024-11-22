@@ -48,7 +48,8 @@ h2 {
     font-size: 30px;
 }
 
-.produtosContainer, .carrinhoContainer {
+.produtosContainer,
+.carrinhoContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -118,16 +119,64 @@ h2 {
 }
 
 textarea {
-    resize: nome;
+    resize: none;
 }
 
 form {
     display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: rgb(206, 206, 206);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 0 auto;
+    gap: 15px;
+    width: 90%;
 }
+
+.estudante {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.estudante p {
+    margin: 10px 0;
+}
+
+.estudante label {
+    display: block;
+    margin: 10px 0;
+}
+
+.estudante input[type="text"],
+.estudante input[type="checkbox"] {
+    margin: 5px 0;
+}
+
+.estudante button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.estudante button:hover {
+    background-color: #0056b3;
+}
+
 
 /*footer*/
 footer {
