@@ -111,8 +111,8 @@ function aplicarFiltros() {
   const categorySelect = document.getElementById('filtro-select');
   const sortSelect = document.getElementById('ordenar-select');
   const searchInput = document.getElementById('search-input');
-  let produtosFiltrados = [...todosOsProdutos];
-
+  const botao = document.getElementById('botaoAll');
+    let produtosFiltrados = [...todosOsProdutos];
   const categoriaSelecionada = categorySelect.value;
   if (categoriaSelecionada !== 'all') {
     produtosFiltrados = produtosFiltrados.filter(
@@ -138,6 +138,10 @@ function aplicarFiltros() {
   produtosFiltrados = produtosFiltrados.filter((produto) =>
     produto.title.toLowerCase().includes(textoBusca) || produto.description.toLowerCase().includes(textoBusca)
   );
+
+  botao.addEventListener('click', function () {
+    adicionarAoCarrinhoAll(produtos);
+  });
 
   exibirProdutos(produtosFiltrados);
 }
