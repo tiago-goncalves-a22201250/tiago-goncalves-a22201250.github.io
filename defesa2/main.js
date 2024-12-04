@@ -30,6 +30,8 @@ function exibirProdutos(produtos) {
 }
 
 function criarProduto(produto) {
+  const botaoSelect = document.getElementById('botao-select');
+
   const article = document.createElement('article');
   article.classList.add('produto');
 
@@ -128,7 +130,7 @@ function aplicarFiltros() {
 
   const textoBusca = searchInput.value.toLowerCase();
   produtosFiltrados = produtosFiltrados.filter((produto) =>
-    produto.title.toLowerCase().includes(textoBusca)
+    produto.title.toLowerCase().includes(textoBusca) || produto.description.toLowerCase().includes(textoBusca)
   );
 
   exibirProdutos(produtosFiltrados);
@@ -176,6 +178,19 @@ function adicionarAoCarrinho(produto) {
   let valor = JSON.parse(localStorage.getItem('valor')) || 0;
   carrinho.push(produto);
   valor += produto.price;
+  localStorage.setItem('carrinho', JSON.stringify(carrinho));
+  localStorage.setItem('valor', JSON.stringify(valor));
+  carregarCarrinho();
+}
+
+//Adiciona todos os produtos ao carrinho
+function adicionarAoCarrinhoAll(produtos) {
+  let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+  let valor = JSON.parse(localStorage.getItem('valor')) || 0;
+  produtos.forEach((produto) => {
+    carrinho.push(produto);
+    valor += produto.price;
+  });
   localStorage.setItem('carrinho', JSON.stringify(carrinho));
   localStorage.setItem('valor', JSON.stringify(valor));
   carregarCarrinho();
