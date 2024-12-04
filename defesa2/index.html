@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <h1 id="loja">Loja</h1>
+    <nav>
+        <a href="#produtos">Produtos</a>
+        <a href="#cesto">Cesto</a>
+    </nav>
+</header>
+
+<body>
+    <section class="produtos" id="produtos">
+        <h2>Selecione os seus Produtos</h2>
+        <section class="filtroContainer">
+            <p>Filtrar: </p>
+            <select name="filtro" id="filtro-select">
+            </select>
+            <p>Ordenar: </p>
+            <select name="ordenar" id="ordenar-select">
+            </select>
+            <p>Procurar: </p> <textarea class='texto' id='search-input' rows="1"></textarea>
+        </section>
+        <section class="produtosContainer" id="produtosContainer"> </section>
+    </section>
+
+    <section class="cesto" id="cesto">
+        <h2>Produtos selecionados: </h2>
+        <section class="carrinhoContainer" id="carrinhoContainer"></section>
+    </section>
+
+    <form class="estudante">
+        <p>Custo total: </p>
+        <p id="resultado"></p>
+
+        <label>
+            És estudante do DEISI?
+            <input type="checkbox" id="checkbox">
+        </label>
+        <label for="cupao">Cupão de desconto:
+            <input type="text" class="texto" id="cupao" />
+        </label>
+        <button type="button" class="submit" id="botao">Comprar</button>
+        <p id="textoValorFinal"></p>
+        <p id="referenciaBancaria"></p>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+<footer>
+    <p>2024</p>
+</footer>
