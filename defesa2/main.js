@@ -268,6 +268,7 @@ function desconto() {
 
   textoValor.textContent = `Valor final a pagar (com eventuais descontos): ${desconto.toFixed(2)} euros`;
   referenciaBancaria.textContent = `Referencia de pagamento: 201124-0049`;
+  //texto = message;
 }
 
 document.getElementById('search-input').addEventListener('input', function () {
